@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,500;0,700;0,900;1,200;1,300;1,400;1,700;1,800&family=Open+Sans:ital@0;1&family=Roboto+Mono&display=swap");
+
+:root {
+  --hero-background: #f5f5f5;
+  --primary-background: #f5f7fb;
+}
+
+body {
+  font-family: Montserrat, sans-serif, Arial, Helvetica;
+  background-color: var(--primary-background);
+  word-wrap: break-word; 
+}
+
+.courses-category {
+  width: 100%;
+}
+.courses-category-image-container {
+  width: 35%;
+  border-radius: var(--border-radius-custom);
+
+  position: relative;
+}
+
+.grid-homepage {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+
+  gap: 4em;
+
+  grid-template-areas:
+    "nav nav nav nav"
+    "hero hero hero hero"
+    "card-one card-one card-two card-two";
+}
+
+.grid-homepage-nav {
+  grid-area: nav;
+}
+
+.grid-homepage-hero {
+  grid-area: hero;
+
+  background-color: var(--hero-background);
+
+  position: relative;
+}
+
+.grid-homepage-card-one {
+  grid-area: card-one;
+}
+
+.grid-homepage-card-two {
+  grid-area: card-two;
+}
+
+.primary-bg {
+  background-color: var(--background-theme);
+}
+
+@media only screen and (max-width: 767px) {
+  
+  .grid-homepage {
+  
+    grid-template-columns: 1fr;
+
+    grid-template-areas:
+      "nav"
+      "hero"
+      "card-one"
+      "card-two";
+  }
+
+  .card-showcase {
+    flex-basis: 80%;
+  }
+
+  .fs-sml{
+    font-size: 0.1em;
+  }
+}
+
