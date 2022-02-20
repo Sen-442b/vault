@@ -1,0 +1,8 @@
+/* Util */
+
+@media screen and (min-width:767px){
+    .pc-grid-col-2--50-50{
+        display: grid;
+        grid-template-columns: repeat(2,50fr);
+    }
+}
