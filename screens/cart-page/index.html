@@ -5,18 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cart</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/Sen-442b/prefix-ui@master/global.css"
-    />
+    <link rel="stylesheet" href="https://prefix-ui.netlify.app/global.css" />
     <link rel="stylesheet" href="./source/styles.css" />
+    <link rel="stylesheet" href="./../homepage/source/style.css" />
     <script
       src="https://kit.fontawesome.com/6f74bb313d.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <nav class="nav-bar">
+    <nav class="nav-bar border-rad-none">
       <button class="btn btn-outlined display-none" id="btn-nav-toggle">
         <i class="fas fa-bars"></i>
       </button>
@@ -34,7 +32,7 @@
           <input
             type="search"
             name="search icon"
-            class="form-input"
+            class="form-input width-100 border-rad-none"
             placeholder="Search"
             id=""
           />
@@ -42,16 +40,19 @@
       </ul>
       <ul class="flex-spc-btwn">
         <li>
-          <a href="#" class="icon-wrapper icon-wrapper-sml"
-            ><i class="fas fa-bell"></i
-            ><span class="badge badge-notification"></span
+          <a href="../cart-page/index.html" class="cta-text"
+            ><i class="fas fa-shopping-cart"></i
           ></a>
         </li>
         <li>
-          <button class="btn btn-cta">Login</button>
+          <a href="../wishlist/index.html" class="cta-text-hover"
+            ><i class="fas fa-heart"></i
+          ></a>
         </li>
         <li>
-          <button class="btn btn-outlined border-none">Signup</button>
+          <button class="btn btn-outlined danger-txt-hover">
+            <a href="../logout/index.html">Sign Out</a>
+          </button>
         </li>
       </ul>
     </nav>
@@ -77,6 +78,9 @@
           <h4>Total</h4>
           <h4>₹6,000</h4>
         </div>
+        <div class="flex-center">
+          <button class="btn btn-cta btn-cta-anim btn-lrg">Checkout</button>
+        </div>
         <div class="flex-center flex-wrap">
           <input
             name="coupon"
@@ -88,7 +92,7 @@
             type="text"
             placeholder="Apply Coupon"
           />
-          <button class="btn btn-cta">Apply Coupon</button>
+          <button class="btn alert-primary">Apply Coupon</button>
         </div>
       </div>
       <div class="light-bg-color">
@@ -103,7 +107,7 @@
                 />
               </div>
             </div>
-            <div class="flex-column">
+            <div class="flex-column padding-sml">
               <h2 class="headline-typography">
                 Learn Hyperrealistic Sketching
               </h2>
