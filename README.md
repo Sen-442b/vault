@@ -6,7 +6,7 @@
 
 # Screens
 
-- [Homepage](https://vault-online.netlify.app/screens/homepage/index.html)
+- [Homepage](https://vault-online.netlify.app/index.html)
 - [Product Listing Page](https://vault-online.netlify.app/screens/product-listing-page/index.html)
 - [Cart Management](https://vault-online.netlify.app/screens/cart-page/index.html)
 - [Wishlist Management](https://vault-online.netlify.app/screens/wishlist/index.html)
